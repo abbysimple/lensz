@@ -1,0 +1,45 @@
+Lensz uses the following third-party components.
+
+ONNX Runtime (statically linked) - Microsoft Corporation - MIT License
+  https://github.com/microsoft/onnxruntime
+
+DirectML (DirectML.dll) - Microsoft Corporation - redistributed under the DirectML license
+  https://www.nuget.org/packages/Microsoft.AI.DirectML
+
+MediaPipe models (models\face_detector.onnx, face_landmarks_detector.onnx, selfie_segmenter.onnx)
+  Google LLC - Apache License 2.0 - converted to ONNX
+  https://github.com/google-ai-edge/mediapipe  -  https://www.apache.org/licenses/LICENSE-2.0
+
+NVIDIA Maxine Video Effects SDK - not included. When NVIDIA's own SDK installer has put it on the PC,
+  Lensz uses its AI Green Screen. Lensz's interface declarations follow NVIDIA's MIT-licensed headers
+  (https://github.com/NVIDIA-Maxine/Maxine-VFX-SDK).
+
+Softcam (lensz_dshow.dll, modified) - Copyright (c) 2020 tshino - MIT License
+  https://github.com/tshino/softcam
+DirectShow BaseClasses (inside lensz_dshow.dll) - Microsoft Corporation - MIT License
+  https://github.com/microsoft/Windows-classic-samples
+
+Aileron font (the "Open the Lensz app" camera picture) - SIL Open Font License 1.1
+
+Rust crates (egui/eframe, wgpu, windows-rs, ort, image, tray-icon, muda, serde, rfd, delaunator,
+bytemuck, anyhow, pollster, png and their dependencies) - MIT and/or Apache License 2.0.
+
+Microsoft Visual C++ Redistributable - installed with Microsoft's own installer when missing.
+
+-------------------------------------------------------------------------------
+MIT License (applies to the MIT-licensed components above, with their copyright holders)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+associated documentation files (the "Software"), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify, merge, publish, distribute,
+sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or
+substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES
+OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

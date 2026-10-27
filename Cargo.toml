@@ -1,0 +1,25 @@
+[package]
+name = "lensz"
+version = "0.1.2"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.104"
+bytemuck = { version = "1.25.2", features = ["derive"] }
+delaunator = "1.1.0"
+eframe = { version = "0.36.2", default-features = false, features = ["wgpu", "default_fonts"] }
+image = { version = "0.25.10", default-features = false, features = ["jpeg", "png", "webp"] }
+ort = { version = "2.0.0-rc.13", features = ["directml"] }
+png = "0.18.1"
+pollster = "1.0.1"
+rfd = "0.17.2"
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0.151"
+tray-icon = "0.26.1"
+windows = { version = "0.62.2", features = ["Win32_Media_MediaFoundation", "Win32_System_Com", "Win32_Foundation", "Win32_Media_KernelStreaming", "Win32_Security", "Win32_Security_Authorization", "Win32_System_Memory", "Win32_System_SystemInformation", "Win32_System_Registry", "Win32_UI_Shell", "Win32_UI_WindowsAndMessaging"] }
+
+[workspace]
+members = [".", "vcam"]
+
+[build-dependencies]
+winresource = "0.1.31"
