@@ -8,6 +8,8 @@ and colour filters, replaces or blurs your background, and offers the result as 
 
 Everything runs on your PC. Lensz needs no account, no internet connection and adds no watermark.
 
+![Lensz settings panels: Face Retouch, Color Filter, Color Correction, Virtual Background](docs/screenshots/panels.png)
+
 ## Features
 
 | Menu | What it does |
